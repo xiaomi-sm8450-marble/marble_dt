@@ -7,7 +7,7 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common RisingOS configuration
+# Inherit from common TenX-OS configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
@@ -29,15 +29,10 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMR
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# RisingOS stuff
+# TenX-OS stuff
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := false
 WITH_GMS := true
-
-# RisingOS Maintainer stuff
-RISING_MAINTAINER=SharmagRit
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Snapdragon® 7+ Gen 2" \
-    RISING_MAINTAINER="SharmagRit"
