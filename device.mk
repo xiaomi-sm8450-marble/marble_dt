@@ -24,6 +24,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc
 
 # Overlay
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_PACKAGES += \
     ApertureResMarble \
     FrameworksResMarble \

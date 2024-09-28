@@ -7,7 +7,7 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common RisingOS configuration
+# Inherit from common EverestOS configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier
@@ -29,15 +29,15 @@ BUILD_FINGERPRINT := POCO/marble_global/marble:14/UKQ1.230804.001/V816.0.8.0.UMR
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# RisingOS stuff
+# EverestOS stuff
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := false
+WITH_GAPPS := true
+
+# Quick switch (add more than one Launcher in build)
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := true
 
-# RisingOS Maintainer stuff
-RISING_MAINTAINER=SharmagRit
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="Snapdragon® 7+ Gen 2" \
-    RISING_MAINTAINER="SharmagRit"
+# EverestOS Maintainer stuff
+EVEREST_MAINTAINER := SharmagRit
+EVEREST_BUILD_TYPE := OFFICIAL
