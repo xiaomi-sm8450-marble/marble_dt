@@ -1,3 +1,10 @@
+# DroidX Device info
+ro.droidx.chipset=Snapdragon® 7+ Gen 2
+ro.droidx.display_resolution=6.67" 2400x1080 120Hz
+
+# DroidX Maintainer info
+ro.droidx.maintainer=SharmagRit
+
 # OIS fix
 persist.camera.gyro.android=20
 persist.camera.HAL3.enabled=1
