@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # NFC
 TARGET_NFC_SUPPORTED_SKUS := marble
 
