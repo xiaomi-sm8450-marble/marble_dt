@@ -25,6 +25,9 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
     ApertureResMarble \
     FrameworksResMarble \
     NfcResMarble \
